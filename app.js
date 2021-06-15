@@ -123,6 +123,9 @@ function showAlert(type,message){
     alert.className=`alert alert-${type}`;
     alert.textContent=message;
     firstCardBody.appendChild(alert);
+    setTimeout(function () {
+      alert.remove()
+    }, 2000);
   
 
 }
